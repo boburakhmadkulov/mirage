@@ -97,6 +97,9 @@ button {
   width: 60%;
   -webkit-transition: all .5s;
   transition: all .5s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .for-bg header .header-content nav .nav-bar ul a img {
@@ -552,6 +555,10 @@ section.sec3 .container div.mainb div.width50 {
           justify-content: center;
 }
 
+section.sec3 .container div.mainb div.width50 img {
+  width: 100%;
+}
+
 section.sec3 .container div.mainb div.design-things {
   width: 40%;
   display: -webkit-box;
@@ -649,6 +656,16 @@ section.sec4 .container .our-bg {
 
 section.sec4 .container .our-bg .wi50 {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.sec4 .container .our-bg .wi50 img {
+  width: 100%;
 }
 
 section.sec4 .container .our-bg .sec4-content {
@@ -766,7 +783,7 @@ section.sec5 .container .sec5-main .sec5-content p.heartiest {
   font-size: 20px;
   line-height: 32px;
   color: #919299;
-  width: 80%;
+  width: 90%;
   margin-top: 20px;
 }
 
@@ -851,6 +868,10 @@ section.sec6 .for-bg-sec6 .container .sec6-main .brands {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+section.sec6 .for-bg-sec6 .container .sec6-main .brands img {
+  padding: 5%;
 }
 
 section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content {
@@ -959,6 +980,15 @@ section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content div button {
       -ms-flex-pack: center;
           justify-content: center;
   border: 3px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content div button p {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
 }
 
 section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content div button:hover {
@@ -968,6 +998,10 @@ section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content div button:hover {
 }
 
 section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content div button:hover i {
+  color: #F78BB6;
+}
+
+section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content div button:hover p {
   color: #F78BB6;
 }
 
@@ -982,6 +1016,7 @@ section.sec7 {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 170px;
+  padding-bottom: 2%;
 }
 
 section.sec7 .container .main-sec7 {
@@ -1029,7 +1064,14 @@ section.sec7 .container .main-sec7 .sec7-right .links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.sec7 .container .main-sec7 .sec7-right .links a {
+  margin-bottom: 5%;
+  margin-left: 5%;
 }
 
 section.sec7 .container .main-sec7 .sec7-right .links a .link-block {
@@ -1233,7 +1275,7 @@ footer .container .main-footer div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 80%;
 }
 
 footer .container .main-footer div img.copy {
@@ -1257,6 +1299,7 @@ footer .container .main-footer div.left {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 20%;
 }
 
 footer .container .main-footer div.left select {
@@ -1275,7 +1318,7 @@ footer .container .main-footer div.left select:focus {
   border: none;
 }
 
-@media (max-width: 858px) {
+@media (max-width: 565px) {
   header .header-content nav .checkbtn {
     display: block !important;
     z-index: 1;
@@ -1300,6 +1343,12 @@ footer .container .main-footer div.left select:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  header .header-content nav .nav-bar ul li {
+    margin-top: 20%;
   }
   header .header-content nav .nav-bar ul a {
     font-size: 25px;
@@ -1366,7 +1415,7 @@ footer .container .main-footer div.left select:focus {
     text-align: center;
   }
   .mainb .design-things .a-creative {
-    width: 80%;
+    width: 90%;
     text-align: center;
   }
   .mainb .width50 {
@@ -1400,7 +1449,7 @@ footer .container .main-footer div.left select:focus {
     text-align: center;
   }
   .our-bg .sec4-content .good-team {
-    width: 80%;
+    width: 90%;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1428,6 +1477,149 @@ footer .container .main-footer div.left select:focus {
   .brands {
     -ms-flex-pack: distribute !important;
         justify-content: space-around !important;
+  }
+}
+
+@media (max-width: 930px) {
+  .for-bg-sec6 {
+    background-image: url(../img/png/new-png.png) !important;
+  }
+  .for-bg-sec6 .container .sec6-main .sec6-content div {
+    width: 80% !important;
+    height: calc(100% * var(--hex-parent-width)) !important;
+  }
+  .for-bg-sec6 .container .sec6-main .sec6-content div input::-webkit-input-placeholder {
+    font-size: 60%;
+  }
+  .for-bg-sec6 .container .sec6-main .sec6-content div input:-ms-input-placeholder {
+    font-size: 60%;
+  }
+  .for-bg-sec6 .container .sec6-main .sec6-content div input::-ms-input-placeholder {
+    font-size: 60%;
+  }
+  .for-bg-sec6 .container .sec6-main .sec6-content div input::placeholder {
+    font-size: 60%;
+  }
+  .for-bg-sec6 .container .sec6-main .sec6-content div button {
+    height: 80% !important;
+    width: calc(100% * var(--hex-parent-height)) !important;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+  }
+  .for-bg-sec6 .container .sec6-main .sec6-content div button p {
+    display: none;
+  }
+  .for-bg-sec6 .container .sec6-main h1 {
+    text-align: center;
+  }
+  .for-bg-sec6 .container .sec6-main p {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1137px) {
+  .main-sec7 {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .main-sec7 .sec7-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100% !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 9%;
+  }
+  .main-sec7 .sec7-right p {
+    margin-top: 0 !important;
+    font-size: 15px !important;
+  }
+  .main-sec7 .sec7-right h1 {
+    display: none;
+  }
+  .main-sec7 .sec7-right div.links {
+    width: 20% !important;
+    margin-top: 0 !important;
+  }
+  .main-sec7 .sec7-left {
+    width: 100% !important;
+  }
+  .main-sec7 .sec7-left div h1 {
+    font-size: 20px !important;
+  }
+  .main-sec7 .sec7-left div ul li a {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 512px) {
+  .main-sec7 .sec7-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 9%;
+  }
+  .main-sec7 .sec7-right p {
+    margin-top: 2% !important;
+  }
+  .main-sec7 .sec7-right h1 {
+    display: none;
+  }
+  .main-sec7 .sec7-right div.links {
+    width: 50% !important;
+    margin-top: 3% !important;
+  }
+  .main-sec7 .sec7-right div.links a {
+    margin-left: 0 !important;
+  }
+  .main-sec7 .sec7-left {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-sec7 .sec7-left div {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 373px) {
+  footer {
+    height: 60px;
+  }
+  footer .container .main-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 2%;
+  }
+  footer .container .main-footer div {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .container .main-footer div.left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

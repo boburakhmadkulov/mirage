@@ -59,7 +59,6 @@ button{
             justify-content: space-around;
             width: 60%;
             transition: all .5s;
-            padding: 20px;
             a{
               img{
                 padding: 10px 20px;
@@ -129,6 +128,7 @@ button{
             line-height: 32px;
             color: #919299;          
             padding-top: 30px;
+            width: 70%;
           }
           button{
             background: #F78BB6;
@@ -190,6 +190,7 @@ section.sec2{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         div.boxes{
           width: 270px;
           border-radius: 8px;
@@ -354,10 +355,7 @@ section.sec3{
   padding-bottom: 20%;
   .container{
     div.mainb{
-      width: 100%;
-      background-image: url(../img/png/art.png);
-      background-repeat: no-repeat;
-      background-position: left;
+      width: 100%;      
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -365,9 +363,14 @@ section.sec3{
       padding-top: 30px;
       div.width50{
         width: 50%;
+        display: flex;
+        justify-content: center;
       }
       div.design-things{
         width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         h1{
           font-weight: 500;
           font-size: 28px;
@@ -421,12 +424,9 @@ section.sec4{
   background-image: url(../img/svg/Bloobsleft.svg);
   background-repeat: no-repeat;
   background-position: bottom left;
-  padding-bottom: 23%;
+  padding-bottom: 17%;
   .container{
     .our-bg{
-      background-image: url(../img/png/Welcome.png);
-      background-repeat: no-repeat;
-      background-position: right;
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -437,6 +437,9 @@ section.sec4{
       }
       .sec4-content{
         width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         h1{
           font-weight: 500;
           font-size: 28px;
@@ -863,53 +866,6 @@ footer{
   }
 }
 
-// @media (max-width:360px) {
-//   header{
-//     margin-bottom: 120px;
-//     .header-content{
-//       padding-top: 40px;
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: space-between;
-//       nav{
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-around;
-//         ul{
-//           display: none;
-//           flex-direction: row;
-//           justify-content: space-around;
-//           li{
-//             a{
-//               font-style: normal;
-//               font-weight: bold;
-//               padding: 0 50px;
-//               color: #56597A;
-//               opacity: 60%;
-//               transition: all 0.3s ease;
-//               &:hover{
-//                 opacity: 100%;
-//               }
-//             }
-//           }
-//         }
-//         a{
-//           font-style: normal;
-//           font-weight: bold;
-//           color: #56597A;
-//           opacity: 60%;
-//           transition: all 0.3s ease;
-//           padding: 0 50px;
-//           &:hover{
-//             opacity: 100%;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-
 
 @media (max-width: 858px){
   header{
@@ -934,15 +890,11 @@ footer{
             display: flex;
             flex-direction: column !important;
             align-items: center;
-            li{
-              display: flex;
-              flex-direction: column;
+            a{
+              font-size: 25px;
             }
             .dis-none{
               display: none;
-            }
-            a{
-              font-size: 35px;
             }
             .none-a{
               display: block !important;
@@ -951,5 +903,98 @@ footer{
         }
       }
     }
+  }
+}
+
+
+@media (max-width:1137px){
+  div.creative{
+    background-image: url(../img/png/new-png.png) !important;
+    div{
+      width: 100% !important;
+    }
+  }
+}
+
+
+@media (max-width:1245px){
+  .sec2-content{
+    display: flex;
+    justify-content: center;
+    div{
+      justify-content: space-around !important;
+    }
+  }
+}
+
+
+@media (max-width:1126px){
+  .mainb{
+    background-image: url(../img/png/new-png.png) !important;
+    width: 50;
+  }
+}
+
+
+@media (max-width:1192px){
+  .mainb{
+    flex-direction: column-reverse !important;
+    justify-content: space-around;
+    .design-things{
+      margin-bottom: 10%;
+      width: 100% !important;
+      justify-content: center;
+      align-items: center;
+      .we-loves{
+        text-align: center;
+      }
+      .a-creative{
+        width: 80%;
+        text-align: center;
+      }
+    }
+    .width50{
+      width: 100% !important;
+    }
+  }
+}
+
+
+@media (max-width:1042px){
+  .our-bg{
+    flex-direction: column !important;
+    justify-content: space-around;
+    .sec4-content{
+      margin-bottom: 10%;
+      width: 100% !important;
+      justify-content: center;
+      align-items: center;
+      h1{
+        text-align: center;
+      }
+      .we-believe{
+        text-align: center;
+      }
+      .good-team{
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .width50{
+      width: 100% !important;
+    }
+  }
+  .sec5-main{
+    background-image: url(../img/png/new-png.png) !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    .sec5-content{
+      width: 100% !important;
+    }
+  }
+  .brands{
+    justify-content: space-around !important;
   }
 }

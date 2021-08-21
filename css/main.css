@@ -97,7 +97,6 @@ button {
   width: 60%;
   -webkit-transition: all .5s;
   transition: all .5s;
-  padding: 20px;
 }
 
 .for-bg header .header-content nav .nav-bar ul a img {
@@ -173,6 +172,7 @@ button {
   line-height: 32px;
   color: #919299;
   padding-top: 30px;
+  width: 70%;
 }
 
 .for-bg section div.container div.creative div button {
@@ -261,6 +261,8 @@ section.sec2 .container .sec2-content div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.sec2 .container .sec2-content div div.boxes {
@@ -525,9 +527,6 @@ section.sec3 {
 
 section.sec3 .container div.mainb {
   width: 100%;
-  background-image: url(../img/png/art.png);
-  background-repeat: no-repeat;
-  background-position: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,10 +544,26 @@ section.sec3 .container div.mainb {
 
 section.sec3 .container div.mainb div.width50 {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.sec3 .container div.mainb div.design-things {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 section.sec3 .container div.mainb div.design-things h1 {
@@ -612,13 +627,10 @@ section.sec4 {
   background-image: url(../img/svg/Bloobsleft.svg);
   background-repeat: no-repeat;
   background-position: bottom left;
-  padding-bottom: 23%;
+  padding-bottom: 17%;
 }
 
 section.sec4 .container .our-bg {
-  background-image: url(../img/png/Welcome.png);
-  background-repeat: no-repeat;
-  background-position: right;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,6 +653,16 @@ section.sec4 .container .our-bg .wi50 {
 
 section.sec4 .container .our-bg .sec4-content {
   width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 section.sec4 .container .our-bg .sec4-content h1 {
@@ -1279,23 +1301,133 @@ footer .container .main-footer div.left select:focus {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .header-content nav .nav-bar ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  header .header-content nav .nav-bar ul a {
+    font-size: 25px;
   }
   header .header-content nav .nav-bar ul .dis-none {
     display: none;
   }
-  header .header-content nav .nav-bar ul a {
-    font-size: 35px;
-  }
   header .header-content nav .nav-bar ul .none-a {
     display: block !important;
+  }
+}
+
+@media (max-width: 1137px) {
+  div.creative {
+    background-image: url(../img/png/new-png.png) !important;
+  }
+  div.creative div {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1245px) {
+  .sec2-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sec2-content div {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+}
+
+@media (max-width: 1126px) {
+  .mainb {
+    background-image: url(../img/png/new-png.png) !important;
+    width: 50;
+  }
+}
+
+@media (max-width: 1192px) {
+  .mainb {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .mainb .design-things {
+    margin-bottom: 10%;
+    width: 100% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainb .design-things .we-loves {
+    text-align: center;
+  }
+  .mainb .design-things .a-creative {
+    width: 80%;
+    text-align: center;
+  }
+  .mainb .width50 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1042px) {
+  .our-bg {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .our-bg .sec4-content {
+    margin-bottom: 10%;
+    width: 100% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-bg .sec4-content h1 {
+    text-align: center;
+  }
+  .our-bg .sec4-content .we-believe {
+    text-align: center;
+  }
+  .our-bg .sec4-content .good-team {
+    width: 80%;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .our-bg .width50 {
+    width: 100% !important;
+  }
+  .sec5-main {
+    background-image: url(../img/png/new-png.png) !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .sec5-main .sec5-content {
+    width: 100% !important;
+  }
+  .brands {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

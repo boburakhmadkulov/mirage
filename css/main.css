@@ -1489,16 +1489,16 @@ footer .container .main-footer div.left select:focus {
     height: calc(100% * var(--hex-parent-width)) !important;
   }
   .for-bg-sec6 .container .sec6-main .sec6-content div input::-webkit-input-placeholder {
-    font-size: 60%;
+    font-size: 80% !important;
   }
   .for-bg-sec6 .container .sec6-main .sec6-content div input:-ms-input-placeholder {
-    font-size: 60%;
+    font-size: 80% !important;
   }
   .for-bg-sec6 .container .sec6-main .sec6-content div input::-ms-input-placeholder {
-    font-size: 60%;
+    font-size: 80% !important;
   }
   .for-bg-sec6 .container .sec6-main .sec6-content div input::placeholder {
-    font-size: 60%;
+    font-size: 80% !important;
   }
   .for-bg-sec6 .container .sec6-main .sec6-content div button {
     height: 80% !important;

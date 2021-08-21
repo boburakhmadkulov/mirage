@@ -1040,7 +1040,7 @@ footer{
             height: calc(100% * var(--hex-parent-width)) !important;
             input{
               &::placeholder{
-                font-size: 60%;
+                font-size: 80% !important;
               }
             }
             button{

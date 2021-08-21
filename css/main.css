@@ -871,7 +871,7 @@ section.sec6 .for-bg-sec6 .container .sec6-main .brands {
 }
 
 section.sec6 .for-bg-sec6 .container .sec6-main .brands img {
-  padding: 5%;
+  padding: 4%;
 }
 
 section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content {
@@ -983,6 +983,8 @@ section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content div button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 section.sec6 .for-bg-sec6 .container .sec6-main .sec6-content div button p {

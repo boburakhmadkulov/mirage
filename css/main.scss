@@ -596,7 +596,7 @@ section.sec6{
           align-items: center;
           flex-wrap: wrap;
           img{
-            padding: 5%;
+            padding: 4%;
           }
         }
         .sec6-content{
@@ -664,7 +664,8 @@ section.sec6{
               align-items: center;
               justify-content: center;
               border: 3px solid transparent;
-              display: flex;
+              display: flex;  
+              transition: all 0.3s ease;
               p{
                 font-size: 20px;
                 margin: 0;
